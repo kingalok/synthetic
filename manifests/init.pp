@@ -44,7 +44,9 @@
 #
 class synthetic {
 
-include synthetic::require
+#include synthetic::require
+# Call the Pre-requisites
+include synthetic::prereq
 
 #class { 'synthetic::sendparam' : 
 #    display_message => 'Welcome to Puppet', 
