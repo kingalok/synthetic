@@ -22,6 +22,9 @@ local_security_policy { 'Allow log on locally':
 #    }
 #
 
-
+file { 'c:\temp\config.json' :
+	ensure => file,
+	source => 'puppet:///modules/synthetic/config.json'
+}
 
 }
